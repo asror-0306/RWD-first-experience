@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  font-style: normal;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1250px;
+}
+
+header {
+  width: 100%;
+  background-color: #a39595;
+}
+
+header nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #d6e0dd;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header nav .list {
+  height: 60px;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+header nav .list .list-item a {
+  color: #d6e0dd;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* -------------------Main------------- */
+
+.intro {
+  width: 100%;
+}
+
+.intro .cards {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #000000;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 20px 30px;
+  margin-top: 100px;
+}
+
+.intro .cards .card {
+  width: 200px;
+  height: 150px;
+  background-color: #0e8486;
+}
+
+.intro .cards .card p {
+  text-align: center;
+  padding: 60px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .container{
+    width: 100%;
+    height: auto;
+  }
+
+
+  header {
+    background-color: #0e8486;
+  }
+
+  header nav .list {
+    gap: 5rem;
+  }
+
+  header nav .list .list-item a {
+    color: #282828;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .intro .cards {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 0 0 10%;
+  }
+
+  .intro .cards .card{
+    width: 25%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-color: #aaa;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+  }
+
+  header nav .list .list-item {
+    display: none;
+  }
+
+
+  .intro .cards{
+    display: flex;
+    flex-wrap: wrap;
+   }
+ 
+   .intro .cards .card{
+     width: 40%;
+     height: auto;
+   }
+}
+
+
+@media only screen and (max-width: 576px) {
+  header {
+    background-color: #a72020;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  header nav .list .list-item {
+    display: none;
+  }
+
+  .logo {
+    color: #3f4543;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  .intro .cards{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 5% 10% 10% 10%;
+  }
+
+  .intro .cards .card{
+    width: 100%;
+    height: auto;
+    background-color: #528025;
+  }
+}
